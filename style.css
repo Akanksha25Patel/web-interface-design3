@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #7129bf, #92b6f4);
+  color: white;
+  z-index: 1000;
+}
+nav {
+  height: 70px;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.nav-right {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 18px;
+}
+
+
+/* Left */
+.nav-left {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Center menu */
+.nav-center {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-center a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Right */
+.nav-right {
+  background: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Scroll effect */
+nav.scrolled {
+  background: #222;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #7f2bd8, #4b86ec);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Button */
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #2575fc;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Projects */
+.project-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  background: #f4f4f4;
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* Contact */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Fade In */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
